@@ -1,19 +1,20 @@
 class Chameleon
 
-    attr_reader :color
-
     def initialize(color)
         @color = color
     end
 
-    def mixx_color(color)
-                
+    def color
+        @color           
+    end
+
+    def color=(color)
+        @color = color
     end
 
 end
 
-puts 'Ваш колір'
-color_user = gets.chomp
-
-animal1 = Chameleon.new(color_user)
-
+piper = Chameleon.new("зелений")
+puts "Спочатку я #{piper.color}"
+piper.color = "синій"
+puts "Тепер я #{piper.color}"
