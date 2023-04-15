@@ -20,3 +20,13 @@ file = File.new(current_puth + "/" + file_name + ".txt", 'a')
 file.print("\n\r" + time_string + "\n\r")
 
 all_lines.pop
+
+all_lines.each do |item|
+    file.puts(item)
+end
+
+file.puts(separator)
+
+file.close
+
+puts "Записано у файл #{file_name}.txt"
