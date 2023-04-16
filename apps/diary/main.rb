@@ -1,3 +1,5 @@
+puts "Привіт! Занотуй свої думки: "
+
 current_puth = File.dirname(__FILE__)
 
 line = nil
@@ -13,7 +15,7 @@ time = Time.now
 file_name = time.strftime('%Y-%m-%d')
 time_string = time.strftime('%H:%M')
 
-separator = "________________________________"
+message_separator = "******************************************"
 
 file = File.new(current_puth + "/" + file_name + ".txt", 'a')
 
@@ -25,7 +27,7 @@ all_lines.each do |item|
     file.puts(item)
 end
 
-file.puts(separator)
+file.puts(message_separator)
 
 file.close
 
