@@ -1,6 +1,6 @@
 puth = "./data/*.txt"
 
-files = Dir["./data/*.txt"]
+files = Dir[puth]
 
 files.each_with_index do |file, index|
     puts "#{index + 1}: #{file}"
