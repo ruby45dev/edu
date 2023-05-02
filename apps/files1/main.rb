@@ -1,5 +1,7 @@
-if File.exist?("./data/data.txt")
-    file = File.new("./data/data.txt")
+path_file = "#{__dir__}/data/data.txt"
+
+if File.exist?(path_file)
+    file = File.new(path_file)
     content = file.readlines
     file.close
     puts content.sample
