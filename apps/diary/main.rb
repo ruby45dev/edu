@@ -1,6 +1,7 @@
 puts "Привіт! Занотуй свої думки: "
 
-current_puth = File.dirname(__FILE__)
+# current_puth = File.dirname(__FILE__)
+current_puth = __dir__
 
 line = nil
 all_lines = []
