@@ -1,6 +1,7 @@
 path = "./data/*.txt"
 
 files_path = Dir[path]
+binding.irb
 
 files_path.each.with_index(1) do |file_name, index|
     puts "#{index}: #{file_name}"
