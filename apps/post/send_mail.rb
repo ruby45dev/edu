@@ -4,23 +4,18 @@ require 'pony'
 require 'io/console'
 
 puts 'Введіть адресу відправника'
-
 my_mail = STDIN.gets.chomp
 
 puts 'Введіть ваш пароль: '
-
 password = STDIN.noecho(&:gets).chomp
 
 puts 'Кому відправити листа?'
-
 send_to = STDIN.gets.chomp
 
 puts 'Введіть тему листа: '
-
 subject = STDIN.gets.chomp
 
 puts 'Що написати в листі?'
-
 body = STDIN.gets.chomp
 
 Pony.mail({
