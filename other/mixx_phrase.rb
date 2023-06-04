@@ -3,8 +3,7 @@ def mixx_word(word)
 end
 
 def mixx_phrase
-    
-
+    word_user.split
 end
 
 
