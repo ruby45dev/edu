@@ -14,3 +14,12 @@ pc_input = rand(options.size)
 
 puts "Ви вибрали: #{user_input}"
 puts "ПК вибрав: #{pc_input}"
+
+if user_input == pc_input
+    puts 'нічия'
+elsif (user_input == 0 && pc_input == 1) ||
+    (user_input == 1 && pc_input == 2) 
+    puts 'Ви виграли'
+else 
+    puts 'ПК виграв'
+end
