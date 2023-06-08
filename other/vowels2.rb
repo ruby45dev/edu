@@ -1,6 +1,6 @@
 def vow(word)
     letters_arr = %W(й е ї і а о є я и ю) # масив голосних   
-    letters_full = ("а".."я").to_a.size # масив алфавіту
+    letters_full = ("а".."я").to_a.size # кількість букв у алфавіті
     three = []
     count = 0
     word_arr = word.chars # масив букв зі слова юзера
