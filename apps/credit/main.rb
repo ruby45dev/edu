@@ -14,4 +14,11 @@ salary = gets.to_i
 puts 'Чи є у вас кредитна історія?(вкажіть y, якщо є; вкажіть n, якщо нема)'
 credit_history = gets.chomp.downcase
 
+puts 'Яку суму бажаєте отримати?'
+amount_credit = gets.to_i
+
+request1 = CreditRequest.new(age, floor, salary, credit_history, amount_credit)
+
+
+
 
