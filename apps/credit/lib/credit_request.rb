@@ -8,6 +8,7 @@ class CreditRequest
         @salary = salary
         @credit_history = credit_history
         @amount_credit = amount_credit
+        @scoring = scoring_ball
     end
 
     
@@ -45,7 +46,7 @@ class CreditRequest
     end
 
     def yes?
-        scoring_ball >= 50
+        @scoring >= 50
     end
 
 end
