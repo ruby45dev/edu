@@ -45,11 +45,7 @@ class CreditRequest
     end
 
     def yes?
-        if scoring_ball >= 50
-            'Ваша заявка схвалена!'
-        else
-            'Спробуйте подати заявку наступного місяця!'
-        end
+        scoring_ball >= 50
     end
 
 end
