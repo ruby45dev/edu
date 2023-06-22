@@ -2,7 +2,7 @@ require_relative 'lib/credit_request'
 
 puts 'Добрий день! Дякуємо за вибір нашої кредитної органіаціЇ'
 puts 'Для отримання кредиту вам потрібно відповісти на питання'
-sleep 0.5
+sleep 1
 
 puts 'Скільки вам років?'
 age = gets.to_i
@@ -23,4 +23,8 @@ request1 = CreditRequest.new(age, floor, salary, credit_history, amount_credit)
 
 request1.scoring_ball
 
-puts "#{request1.yes?}"
+if request1.yes?
+    puts 'Ваша заявка схвалена!'
+else
+    puts 'Спробуйте подати заявку наступного місяця!'
+end
