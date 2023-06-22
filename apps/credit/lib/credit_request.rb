@@ -41,6 +41,7 @@ class CreditRequest
             result += 10
         end   
 
-        return result        
+        result        
     end
+
 end
