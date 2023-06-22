@@ -21,4 +21,6 @@ amount_credit = gets.to_i
 
 request1 = CreditRequest.new(age, floor, salary, credit_history, amount_credit)
 
-p request1.scoring_ball
+request1.scoring_ball
+
+puts "#{request1.yes?}"
