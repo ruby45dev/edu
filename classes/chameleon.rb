@@ -1,16 +1,16 @@
 class Chameleon
-
+    attr_accessor :color
     def initialize(color)
         @color = color
     end
 
-    def color
-        @color           
-    end
+    # def color
+    #     @color           
+    # end
 
-    def color=(color)
-        @color = color
-    end
+    # def color=(color)
+    #     @color = color
+    # end
 
 end
 
