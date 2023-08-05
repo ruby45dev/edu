@@ -1,5 +1,14 @@
 class Post
-  
+
+  def self.post_types
+    [Memo, Link, Task]
+  end
+
+  def self.create(type_index)
+    return post_types[type_index].new
+  end
+
+
   def initialize
     @created_at = Time.now
     @text = nil
@@ -17,17 +26,16 @@ class Post
     to_strings.each do |item|
       file.puts(item)
     end
+
+    file.close
   
   end
 
   def file_path #путь к файлу куда записівать содержимое обїекта
     current_path = File.dirname(__FILE__)
 
-    file_name = @created_at.strftime("#{self.class.name}_%Y-%m-%d_%H-%M-%S.txt") #название файла куда будем писать
+    file_name = @created_at.strftime("#{self.class.name}_ ") #название файла куда будем писать
 
     return current_path + "/" + file_name
   end
-
-
-
 end
