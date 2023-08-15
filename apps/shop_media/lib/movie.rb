@@ -1,3 +1,3 @@
-class Film < Product
+class Movie < Product
 
 end
