@@ -1,9 +1,15 @@
 class Product
-  attr_reader :price, :qty
+  attr_reader :price, :qty, :year, :title
 
   def initialize(hh)
-    @price = hh[:price], 
+    @price = hh[:price]
     @qty = hh[:qty]
+    @year = hh[:year]
+    @title = hh[:title]
+  end
+
+  def to_s
+    "#{@price}, #{@qty}, #{@year}, #{@title}"
   end
 
 end
