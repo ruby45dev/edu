@@ -1,5 +1,5 @@
 class Product
-  attr_reader :price, :qty, :year, :title
+  attr_accessor :price, :qty, :year, :title
 
   def initialize(hh)
     @price = hh[:price]

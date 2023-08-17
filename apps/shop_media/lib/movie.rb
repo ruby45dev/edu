@@ -1,5 +1,5 @@
 class Movie < Product
-  attr_reader
+  attr_accessor :director
   def initialize(movies)
     super
     @director = movies[:director]

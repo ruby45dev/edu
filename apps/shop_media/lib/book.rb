@@ -1,5 +1,5 @@
 class Book < Product
-  attr_reader
+  attr_accessor :book_genre
   def initialize(books)
     super
     @book_genre = books[:book_genre] 
