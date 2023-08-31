@@ -1,15 +1,7 @@
 class Product
-  attr_accessor :price, :qty, :year, :title
-
-  def initialize(hh)
-    @price = hh[:price]
-    @qty = hh[:qty]
-    @year = hh[:year]
-    @title = hh[:title]
+  attr_reader :price, :amount
+  def initialize(params)
+    @price = params[:price]
+    @amount = params[:amount]
   end
-
-  def to_s
-    "#{@price}, #{@qty}, #{@year}, #{@title}"
-  end
-
 end
